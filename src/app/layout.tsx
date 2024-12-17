@@ -22,17 +22,13 @@ interface RootLayoutProps {
   modal: React.ReactNode;
 }
 
-export default function RootLayout({
-  children,
-  modal,
-}: Readonly<RootLayoutProps>) {
+export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        {modal}
       </body>
     </html>
   );
