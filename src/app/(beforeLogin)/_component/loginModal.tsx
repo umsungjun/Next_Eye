@@ -1,16 +1,23 @@
 "use client";
 
 import { useState } from "react";
-
+import { useRouter } from "next/navigation";
 import Image from "next/image";
+
 import { XMarkIcon } from "@heroicons/react/24/solid";
 
 export default function LoginModal() {
+  const router = useRouter();
+
   const [id, setId] = useState();
   const [password, setPassword] = useState();
   const [message, setMessage] = useState();
+
+  const onClickClose = () => {
+    router.back();
+  };
+
   const onSubmit = () => {};
-  const onClickClose = () => {};
 
   const onChangeId = () => {};
 
