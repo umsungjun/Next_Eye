@@ -3,6 +3,9 @@ import Link from "next/link";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
+/* Component */
+import NavMenu from "./_component/NavMenu";
+
 interface AfterLoginLayoutProps {
   children: React.ReactNode;
 }
@@ -22,7 +25,7 @@ export default function AfterLoginLayout({ children }: AfterLoginLayoutProps) {
               />
             </Link>
             <nav className="flex-1">
-              <ul className="list-none"></ul>
+              <NavMenu />
               <Link
                 href="/compose/tweet"
                 className="my-4 flex justify-center items-center h-12 shadow-md bg-black w-56 border-none text-white font-bold text-lg rounded-3xl"
