@@ -127,3 +127,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* afterLogin 좌측 네비게이션 */
+.navMenu {
+  @apply inline-flex h-12 p-3 pr-5 gap-4 hover:bg-[rgba(15,20,25,0.1)] hover:rounded-3xl;
+}
+.navMenu span {
+  @apply text-xl;
+}
