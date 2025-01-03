@@ -23,25 +23,27 @@ export default function NavMenu() {
 
   return (
     <div className="flex flex-col">
-      <Link href="/home" className="navMenu">
-        <>
+      <Link href="/home">
+        <div className="navMenu">
           {segment === "home" ? (
             <SolidHomeIcon className="w-6" />
           ) : (
             <HomeIcon className="w-6" />
           )}
           <span className={segment === "home" ? "font-bold" : ""}>홈</span>
-        </>
+        </div>
       </Link>
-      <Link href="/explore" className="navMenu">
-        {segment === "explore" ? (
-          <SolidMagnifyingGlassIcon className="w-6" />
-        ) : (
-          <MagnifyingGlassIcon className="w-6" />
-        )}
-        <span className={segment === "explore" ? "font-bold" : ""}>
-          탐색하기
-        </span>
+      <Link href="/explore">
+        <div className="navMenu">
+          {segment === "explore" ? (
+            <SolidMagnifyingGlassIcon className="w-6" />
+          ) : (
+            <MagnifyingGlassIcon className="w-6" />
+          )}
+          <span className={segment === "explore" ? "font-bold" : ""}>
+            탐색하기
+          </span>
+        </div>
       </Link>
       <Link href="/messages">
         <div className="navMenu">
